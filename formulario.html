@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción Gimnasio</title>
+</head>
+<body>
+    <header>
+        <h1>Inscríbete</h1>
+        <img src="images/gimnasio.jpg" alt="Foto Gimnasio" width="600">
+    </header>
+    <main>
+    <form action="servidor.js" method="POST" enctype="text/plain" autocomplete="off">
+       <ul>
+        <li><label>Nombre y Apellido:</label>  <input type="text" name="name" id="name"></li>
+        <li><label>Fecha de Nacimiento:</label> <input type="date" name="date" id="date"></li>
+        <li><label>Correo electrónico: </label><input type="email" name="" id="" required></li>
+        <li><label>Móvil: </label><input type="text" required></li>
+        <li><label>Selecciona qué ejercicio realizarás:</label></li>
+            Yoga <input type="checkbox" name="Yoga" id="Yoga">
+            Pilates <input type="checkbox" name="Pilates" id="Pilates">
+            Body Pump <input type="checkbox" name="Pilates" id="Pilates">
+        <li><label>¿Que tan seguido realizas deporte?</label><input type="range" name="" id="" min="0" max="7" step="1"></li>
+        <li><label>Nombre de usuario: </label><input type="text" name="usuario" id= "usuario"></li>
+        <li><label>Contraseña: </label><input type="password" name="" id="" placeholder="Mayor a 6 caracteres"></li>
+        <li>Adjunta tu foto <input type="file" name="file" id="file"></li>
+        <li><label>¿Deseas recibir información adicional y descuentos?</label>
+            Si, por favor.<input type="radio" name="" id="" value="Si">
+            No, gracias.<input type="radio" name="" id="" value="No"> 
+           
+        <li><label>Modo de pago:</label>
+                 <input list="pago" name="pago"></li>
+            <datalist id="pago">
+                <option value="Tarjeta de Crédito">
+                <option value="PayPal">
+                <option value="Efectivo en sucursal"></option>
+            </datalist>
+        <br>
+        <input type="submit" value="Enviar">
+        </ul>
+    </form>
+    </main>
+    <footer>
+        <h6> Gimnasio BlBlaBla 2020</h6>
+    </footer>
+</body>
+</html>
